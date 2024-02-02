@@ -1,10 +1,19 @@
 {
-    "name": "IControl",
+    "name": "Input",
     "maps": [
         {
             "name": "World",
             "id": "f802ed54-7db7-4ba0-bf41-f967a6201126",
             "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "97c97288-1c67-46f4-9454-6a468b06ea20",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
                 {
                     "name": "Translate",
                     "type": "Value",
@@ -15,10 +24,10 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Rotate",
+                    "name": "ToggleCameraMode",
                     "type": "Value",
-                    "id": "97c97288-1c67-46f4-9454-6a468b06ea20",
-                    "expectedControlType": "Vector2",
+                    "id": "cc007632-e26f-4700-b93c-cc657174cc54",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -83,7 +92,7 @@
                 {
                     "name": "Composite",
                     "id": "5bd12cfc-11af-477a-aab9-0e5c3113a350",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -134,6 +143,17 @@
                     "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "135d3119-948a-4e79-9408-f34a9b37e4ad",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleCameraMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
