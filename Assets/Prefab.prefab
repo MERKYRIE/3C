@@ -176,5 +176,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VMode: 1
-  VSensitivity: 0.2
+  VFieldOfView: 120
+  VUsePhysicalProperties: 0
+  VSize: 100
+  VRotationByDefault: {x: 45, y: 45, z: 0}
+  VTranslationByDefault: {x: -7.5, y: 10, z: -7.5}
+  VSensitivity: {x: 0.2, y: 0.2}
   VSpeed: 100
